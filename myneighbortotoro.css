@@ -1,0 +1,543 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5FFFF;
+}
+
+.longmao {
+    top: 50%;
+    left: 50%;
+}
+/*左耳朵动画*/
+.earl {
+    width: 40px;
+    height: 80px;
+    background: #C0C0C0;
+    border-radius: 50% 50%;
+    transform: rotate(-13deg)translateX(90px)translateY(60px);
+    -webkit-animation-name: 'earll';
+    -moz-animation-name: 'earll';
+    /*动画属性名，也就是我们前面keyframes定义的动画名*/
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    /*动画持续时间*/
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    /*动画频率，和transition-timing-function是一样的*/
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    /*动画延迟时间*/
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    /*定义循环资料，infinite为无限次*/
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    /*定义动画方式*/
+}
+
+@-webkit-keyframes 'earll' {
+    0% {
+        transform: rotate(-13deg)translateX(90px)translateY(60px);
+    }
+    100% {
+        transform: rotate(13deg)translateX(115px)translateY(14px);
+    }
+}
+/*右耳朵动画*/
+.earr {
+    width: 40px;
+    height: 80px;
+    background: #C0C0C0;
+    border-radius: 50% 50%;
+    position: absolute;
+    /*border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 100%;
+    border-bottom-left-radius: 100% 50%;
+    border-bottom-right-radius: 50% 50%;*/
+    transform: rotate(13deg)translateX(210px)translateY(-93px);
+    -webkit-animation-name: 'earlr';
+    -moz-animation-name: 'earlr';
+    /*动画属性名，也就是我们前面keyframes定义的动画名*/
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    /*动画持续时间*/
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    /*动画频率，和transition-timing-function是一样的*/
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    /*动画延迟时间*/
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-delay: 0s;
+    /*定义循环资料，infinite为无限次*/
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    /*定义动画方式*/
+}
+
+@-webkit-keyframes 'earlr' {
+    0% {
+        transform: rotate(13deg)translateX(210px)translateY(-93px);
+    }
+    100% {
+        transform: rotate(-13deg)translateX(212px)translateY(-1px);
+    }
+}
+
+.neighbor {
+    width: 270px;
+    height: 320px;
+    background: #C0C0C0;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.eyel {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transform: translateX(60px)translateY(45px);
+}
+
+.eyelone {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #000000;
+    transform: translateX(5px)translateY(3px);
+}
+
+.eyeltwo {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transform: translateX(13px)translateY(6px);
+}
+
+.eyer {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transform: translateX(172px)translateY(45px);
+}
+
+.eyerone {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #000000;
+    transform: translateX(3.5px)translateY(3px);
+}
+
+.eyertwo {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transform: translateX(15px)translateY(6px);
+}
+/*左脸*/
+.facel {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFB6C1;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    transform: translateX(41px)translateY(75px);
+}
+/*右脸*/
+.facer {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFB6C1;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    transform: translateX(192px)translateY(75px);
+}
+/*鼻子*/
+.nose {
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background: #000000;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    transform: translateX(125px)translateY(60px);
+}
+/*嘴*/
+.mouth {
+    width: 10px;
+    height: 4px;
+    position: absolute;
+    border-radius: 50%;
+    background: #000000;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    transform: translateX(131px)translateY(97px);
+}
+
+
+/*.whiskers {
+    width: 70px;
+    height: 1px;
+    position: absolute;
+    background: #000000;
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+}*/
+
+.whiskerone {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    background: #000000;
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+    transform: rotate(10deg)translateX(-10px)translateY(60px);
+}
+
+.whiskertwo {
+    width: 70px;
+    height: 1px;
+    position: absolute;
+    background: #000000;
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+    transform: rotate(0deg)translateX(-23px)translateY(70px);
+}
+
+.whiskerthree {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    background: #000000;
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+    transform: rotate(-10deg)translateX(-35px)translateY(78px);
+}
+
+.whiskerfour {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    background: #000000;
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+    transform: rotate(-10deg)translateX(205px)translateY(90px);
+}
+
+.whiskerfive {
+    width: 70px;
+    height: 1px;
+    position: absolute;
+    background: #000000;
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+    transform: rotate(0deg)translateX(220px)translateY(65px);
+}
+
+.whiskersix {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    background: #000000;
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    filter: blur(0.5px);
+    transform: rotate(10deg)translateX(230px)translateY(39px);
+}
+
+.belly {
+    /*position: absolute;*/
+    width: 200px;
+    height: 200px;
+    background: #FFFFF0;
+    border-top: 1px solid #C0C0C0;
+    border-radius: 450px 300px 450px 300px;
+    z-index: 1;
+    transform-origin: center center;
+    transform: rotate(45deg)translateY(65px)translateX(115px);
+}
+
+.bigmoonone {
+    width: 34px;
+    height: 18px;
+    /*position: absolute;*/
+    /*background: red;*/
+    border-radius: 500%;
+    border-top: 0.35em solid #C0C0C0;
+    transform: rotate(-45deg)translateY(70px);
+}
+
+.bigmoontwo {
+    width: 34px;
+    height: 18px;
+    /*position: absolute;*/
+    /*background: red;*/
+    border-radius: 500%;
+    border-top: 0.35em solid #C0C0C0;
+    transform: rotate(-30deg)translateX(75px)translateY(42px);
+}
+
+.bigmoonthree {
+    width: 34px;
+    height: 18px;
+    /*position: absolute;*/
+    /*background: red;*/
+    border-radius: 500%;
+    border-top: 0.35em solid #C0C0C0;
+    transform: rotate(-60deg)translateX(-27px)translateY(40px);
+}
+
+.smallmoonone {
+    width: 26px;
+    height: 13px;
+    /*position: absolute;*/
+    border-radius: 500%;
+    border-top: 0.25em solid #C0C0C0;
+    transform: rotate(-50deg)translateX(20px)translateY(55px);
+}
+
+.smallmoontwo {
+    width: 26px;
+    height: 13px;
+    /*position: absolute;*/
+    border-radius: 500%;
+    border-top: 0.25em solid #C0C0C0;
+    transform: rotate(-40deg)translateX(83px)translateY(33px);
+}
+
+.smallmoonthree {
+    width: 26px;
+    height: 13px;
+    /*position: absolute;*/
+    border-radius: 500%;
+    border-top: 0.25em solid #C0C0C0;
+    transform: rotate(-30deg)translateX(130px)translateY(2px);
+}
+
+.smallmoonfour {
+    width: 26px;
+    height: 13px;
+    /*position: absolute;*/
+    border-radius: 500%;
+    border-top: 0.25em solid #C0C0C0;
+    transform: rotate(-60deg)translateX(20px)translateY(29px);
+}
+/*小龙猫动画*/
+.smallneighbor {
+    transform: translateX(782px)translateY(-130px);
+    -webkit-animation-name: 'dsmallneighbor';
+    -moz-animation-name: 'dsmallneighbor';
+    /*动画属性名，也就是我们前面keyframes定义的动画名*/
+    -webkit-animation-duration: 8s;
+    -moz-animation-duration: 8s;
+    /*动画持续时间*/
+    -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    /*动画频率，和transition-timing-function是一样的*/
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    /*动画延迟时间*/
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    /*定义循环资料，infinite为无限次*/
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    /*定义动画方式*/
+}
+
+@-webkit-keyframes 'dsmallneighbor' {
+    0% {
+        transform: translateX(82px)translateY(-130px);
+    }
+    50% {
+        transform: translateX(782px)translateY(-130px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(82px)translateY(-130px);
+    }
+}
+
+.smallearl {
+    width: 25px;
+    height: 50px;
+    background: #00BFFF;
+    border-radius: 50% 50%;
+    position: absolute;
+    transform: rotate(-10deg)translateX(-10px)translateY(123px);
+}
+
+.smallearr {
+    width: 25px;
+    height: 50px;
+    background: #00BFFF;
+    border-radius: 50% 50%;
+    position: absolute;
+    transform: rotate(10deg)translateX(88px)translateY(110px);
+}
+
+.smallhead {
+    width: 100px;
+    height: 115px;
+    background: #00BFFF;
+    border-radius: 50%;
+    transform: translateY(150px);
+}
+
+.smalleyel {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transform: translateX(20px)translateY(15px);
+}
+
+.smalleyelone {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background: #000000;
+    transform: translateX(3.5px)translateY(2px);
+}
+
+.smalleyer {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transform: translateX(59px)translateY(15px);
+}
+
+.smalleyerone {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background: #000000;
+    transform: translateX(2px)translateY(2px);
+}
+
+.smallnose {
+    width: 8px;
+    height: 4px;
+    position: absolute;
+    border-radius: 50%;
+    background: #000000;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
+    transform: translateX(46px)translateY(25px);
+}
+
+.smallfacel {
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFB6C1;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    transform: translateX(8px)translateY(30px);
+}
+
+.smallfacer {
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFB6C1;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    transform: translateX(75px)translateY(30px);
+}
+
+.smallbelly {
+    width: 78px;
+    height: 67px;
+    background: #FFFFF0;
+    border-top: 1px solid #00BFFF;
+    border-radius: 200px 200px 200px 200px;
+    transform: translateX(11px)translateY(82px);
+}
+
+.moonone {
+    width: 20px;
+    height: 10px;
+    /*position: absolute;*/
+    border-radius: 500%;
+    border-top: 0.2em solid #00BFFF;
+    transform: rotate(8deg)translateX(53px)translateY(8px);
+}
+
+.moontwo {
+    width: 20px;
+    height: 10px;
+    /*position: absolute;*/
+    border-radius: 500%;
+    border-top: 0.2em solid #00BFFF;
+    transform: translateX(29px)translateY(0px);
+}
+
+.moonthree {
+    width: 20px;
+    height: 10px;
+    /*position: absolute;*/
+    border-radius: 500%;
+    border-top: 0.2em solid #00BFFF;
+    transform: rotate(-8deg)translateX(6px)translateY(-11px);
+}
